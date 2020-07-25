@@ -17,3 +17,15 @@ function anotherConcat() {
 }
 
 document.write("This is good to review too.");
+
+function divideIntegers(int1,int2) {
+    return int1/int2;
+}
+
+document.getElementById("demo").innerHTML = divideIntegers(4558,32);
+
+function additionFunction() {
+    var addition = 2 + 2;
+    document.getElementById("demo").innerHTML = "2 + 2 = " + addition;
+}
+
