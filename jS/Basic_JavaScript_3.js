@@ -33,3 +33,19 @@ function getModulus() {
     var modulatedExpression = 33 % 4;
     document.getElementById("Math5").innerHTML = "The modulus of 33/4 is: " + modulatedExpression;
 }
+
+function negateResult() {
+    var numberFromFunction = 5-2;
+    document.getElementById("Math6").innerHTML = -numberFromFunction;
+}
+
+var integerForPractice = 7;
+integerForPractice++;
+document.write("Seven is now " + integerForPractice);
+
+integerForPractice--;
+document.write("Eight is now " + integerForPractice);
+
+window.alert("Randon Number:" + Math.random()*77);
+
+document.write("3.3 will become " + Math.round(3.3)); //this will round a float to the nearest integer
