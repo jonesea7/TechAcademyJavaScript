@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+
+<html lang="en-us">
+    <head>
+        <meta charset="utf-8">
+        <title>Conditionally Speaking</title>
+    </head>
+    <body>
+        <style>
+            * {
+                padding: 0%;
+                margin: 0%;
+            }
+
+            body {
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                text-align: justify;
+                background-color: #dddddd;
+                cursor: pointer;
+            }
+
+            .grid-wrapper {
+                grid-template-columns: 1fr 2fr 1fr;
+                grid-auto-rows: minmax(2fr, auto);
+            }
+
+            .grid-wrapper > section {
+                background-color: rgb(197, 195, 192);
+            }
+
+            .grid-wrapper > section:nth-child(odd) {
+                background-color: #eeeeee;
+            }
+        </style>
+        <div class="grid-wrapper">
+            <section>
+                <p id="title-destination"></p>
+
+            </section>
+            <section>
+                <h1>Is it Game Time?</h1>
+                <p id="time-of-day-message" onclick="checkForNight()">Click 2 Check.</p>
+            </section>
+            <section>
+                <h1>Are you ready to rock? Yes || No </h1>
+                <input type="text" value="" id="user-input">
+                <button onclick="printRockReadiness()">Push It Good</button>
+                <p id="ready-message"></p>
+            </section>
+        </div>
+        
+        <script src="jS/Basic_JavaScript_7.js"></script>
+    </body>
+</html>
