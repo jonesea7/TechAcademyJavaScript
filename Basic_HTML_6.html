@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+    </head>
+
+    <body>
+        <style>
+            * {
+                padding: 0em;
+                margin: 0em;
+            }
+
+            body {
+                text-align: center;
+                font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+            }
+
+            .grid-wrapper {
+                display: grid;
+                grid-template-columns: 20% 20% 60%;
+                
+            }
+
+            .grid-wrapper > section:nth-child(odd) {
+                background-color: #3d4dff;
+            }
+
+            main {
+                height: auto;
+                width: 75%;
+                margin: 6% auto;
+                padding: 3%;
+                background-color: #2335ff;
+                color: cornsilk;
+            }
+
+            section {
+                height: auto;
+                width: 75%;
+                margin: 6% auto;
+                padding: 3%;
+                background-color: #0011d1;
+                color: darkgray;
+            }
+
+            h1, h2, h3, p {
+                padding: 1.5%;
+            }
+        </style>
+        <div class="grid-wrapper">
+            <section>
+                <h2>Are you tall enough to ride?</h2>
+                <input id="height" value="52" type="text">
+                <button onclick="getHeightDetermineEligibility()">Click here.</button>
+                <p id="ride"></p>
+            </section>
+            
+            <section>
+                <h2>Now let's see if you are old enough to vote.</h2>
+                <input id="age" value="" type="number">
+                <button onclick="determineVoterEligible()">Submit</button>
+                <p id="voter-result"></p>
+            </section>
+
+            <section>
+                <h2>Search vehicle and owner</h2>
+                <input id="owner-name" value="" type="text">
+                <button onclick="identifyVehicleWithOwner()">Submit</button>
+                <p id="owner-and-vehicle"></p>
+            </section>
+        </div>    
+        <script src="jS/Basic_JavaScript_6.js"></script>
+    </body>
+</html>
