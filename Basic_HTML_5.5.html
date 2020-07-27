@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <style>
+            *{
+                padding: 0;
+                margin: 0;
+            }
+
+            body {
+                text-align: center;
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                background-color: #EFF0FC;
+                cursor: pointer;
+                color: #FFD742;
+                letter-spacing: 2px;
+            }
+
+            div {
+                margin: 6% auto;
+                padding: 7%;
+                height: auto;
+                width: 70%;
+                background-color:#0C1AB3;
+            }
+
+            h1, h3, p {
+                margin: 2%;
+                padding: 2%;
+            }
+
+
+        </style>
+
+        <div>
+            <h1>Use 'typeof' to Determine Data Type</h1>
+            <h3>Is "String" in fact a string?</h3>
+            <p id="example-one" onclick="determineDataType()">Click here to see.</p>
+        </div>
+
+        <div>
+            <h1>Write an Expression Combining a String and a Number</h1>
+            <h3>Now for a little coercion. The string "10" and the number 5.</h3>
+            <p id="example-two" onclick="useCoercion()">Click to coerce.</p>
+        </div>
+        
+        <div>
+            <h1>Exploration of AND, OR, and NOT Operators</h1>
+            
+            <h3>(10==="Ten") AND (10==10)</h3>
+            <p id="example-three" onclick="useAndOperator()">Click and See What JavaScript Says.</p>
+            
+            <h3>What about (10==="Ten") <em>OR</em> || (10==10)?</h3>
+            <p id="example-four" onclick="useOrOperator()">Click to See.</p>
+            
+            <h3>Let's have some fun. I have a joke for you.<br><br>
+                Question: When is the expression "20 > 5" false?</h3>
+            <p id="example-five" onclick="useNotOperator()">Twenty greater than five? Click here!</p>
+            <h3>Answer: When it's !( ). </h3>
+
+        </div>
+
+
+        <script src="jS/Basic_JavaScript_5.5.js"></script>
+    </body>
+</html>
