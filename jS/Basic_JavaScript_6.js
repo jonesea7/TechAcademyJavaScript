@@ -32,3 +32,18 @@ function identifyVehicleWithOwner() {
     document.getElementById("owner-and-vehicle").innerHTML = ownerName + " owns the " + Eddy.vehicleColor + "-colored "
 + Eddy.vehicleMake; 
 }
+
+function concatUserNameMessage(){
+    var userName;
+    userName = document.getElementById("user-name").value;
+    
+    function concatUserName(){
+        var message;
+        message = userName + ", you're a capable human being with amazing potential.";
+        function insertMessage(){
+            document.getElementById("user-message").innerHTML = message;
+            }
+        insertMessage();
+    }
+    concatUserName();
+}

@@ -42,3 +42,13 @@ function identifyVehicleWithOwner() {
     document.getElementById("owner-and-vehicle").innerHTML = ownerName + " owns the " + ownerName.vehicleColor + "-colored "
     + ownerName.vehicleMake; 
 }
+
+function insertStartPointInHtml() {
+    document.getElementById("html-id").innerHTML = setStartPoint();
+    function setStartPoint() {
+        var startingPoint = 9;
+        function addOne( ){ startingPoint += 1};
+        addOne();
+        return startingPoint;
+    }
+}
