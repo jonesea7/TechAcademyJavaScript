@@ -14,12 +14,14 @@
             body {
                 text-align: center;
                 font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                margin: 10% 0 10% 10%;
 
             }
 
             .grid-wrapper {
                 display: grid;
-                grid-template-columns: 20% 20% 60%;
+                grid-template-columns: 20% 20% 20% 25%;
+                
                 
             }
 
@@ -42,17 +44,21 @@
                 margin: 6% auto;
                 padding: 3%;
                 background-color: #0011d1;
-                color: darkgray;
+                color: rgb(241, 241, 241);
             }
 
             h1, h2, h3, p {
                 padding: 1.5%;
             }
+
+            input {
+                margin: 1%;
+            }
         </style>
         <div class="grid-wrapper">
             <section>
                 <h2>Are you tall enough to ride?</h2>
-                <input id="height" value="52" type="text">
+                <input id="height" value="" type="text">
                 <button onclick="getHeightDetermineEligibility()">Click here.</button>
                 <p id="ride"></p>
             </section>
@@ -66,6 +72,7 @@
 
             <section>
                 <h2>Search vehicle and owner</h2>
+                <h3>Owner name please.</h3>
                 <input id="owner-name" value="" type="text">
                 <button onclick="identifyVehicleWithOwner()">Submit</button>
                 <p id="owner-and-vehicle"></p>
