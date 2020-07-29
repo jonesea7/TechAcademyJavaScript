@@ -34,3 +34,26 @@ function printRockReadiness() {
             "Dude, you must be hungry. Get some grub and you will be ready to jam.";
     }
 }
+
+//create a function that gives the user a message as to what time of day it is
+function replyWithTimeOfDayMessage() {
+//create a variable that will capture the hour
+    var time = new Date().getHours();
+//create a var that will be the message to the user
+    var replyToUser;
+    //begin a loop
+    //set parameters for the morining using info from time variable 
+    if (time>=0 && time<12) {
+        //establish message and add it to the replytouser var
+        replyToUser = "Good morning, Sunshine.";
+    }
+    else if (time>=12 && time<6) {
+        replyToUser = "Good afternoon.";
+    }
+    else {
+        replyToUser = "Good evening.";
+    }
+    //send reply to user's message container in html
+    document.getElementById("user-message").innerHTML = replyToUser;
+
+}

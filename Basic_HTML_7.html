@@ -14,22 +14,36 @@
 
             body {
                 font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-                text-align: justify;
                 background-color: #dddddd;
                 cursor: pointer;
+                text-align: center;
             }
 
             .grid-wrapper {
-                grid-template-columns: 1fr 2fr 1fr;
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr 1fr;
                 grid-auto-rows: minmax(2fr, auto);
+                column-gap: 1em;
+                row-gap: 1em;
+                
             }
 
             .grid-wrapper > section {
                 background-color: rgb(197, 195, 192);
+                color: whitesmoke;
             }
 
             .grid-wrapper > section:nth-child(odd) {
                 background-color: #eeeeee;
+                color: rgb(102, 98, 98);
+            }
+
+            h1, p, button {
+                padding: 2em;
+            }
+
+            button {
+                margin: 1em;
             }
         </style>
         <div class="grid-wrapper">
@@ -42,10 +56,15 @@
                 <p id="time-of-day-message" onclick="checkForNight()">Click 2 Check.</p>
             </section>
             <section>
-                <h1>Are you ready to rock? Yes || No </h1>
-                <input type="text" value="" id="user-input">
+                <h1>Are you ready to rock? <br> Yes || No </h1>
+                <input type="text" value="" id="user-input"> <br>
                 <button onclick="printRockReadiness()">Push It Good</button>
                 <p id="ready-message"></p>
+            </section>
+            <section>
+                <h1>This section I tried to build with an algorithm.</h1>
+                <p id="user-message"></p> <!--Create container for message from js-->
+                <button id="button-spacer" onclick="replyWithTimeOfDayMessage()">Click for time of day.</button> <!--this is where the user calls the function to get a message about the time of day.-->
             </section>
         </div>
         
