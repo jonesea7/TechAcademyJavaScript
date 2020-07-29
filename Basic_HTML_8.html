@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta charset="utf-8">
+        
+    </head>
+    <body>
+        <style>
+            * {
+                padding: 0%;
+                margin: 0%;
+            }
+
+            body {
+                background-image: url(https://newevolutiondesigns.com/images/freebies/texture-wallpaper-1.jpg);
+                color: whitesmoke;
+                font-family: 'Courier New', Courier, monospace;
+                text-align: center;
+            }
+
+            .grid-field {
+                display: grid;
+                grid-template-columns: 1fr 2fr;
+                grid-auto-rows: minmax(300px auto) ;
+                margin: 10% 10%;
+                column-gap: 3em;
+                row-gap: 2em;
+                
+
+            }
+
+            section {
+                border-radius: 6%;
+                box-shadow: rgb(65, 63, 63);
+            }
+
+            .grid-field > section {
+                background-color: rgb(189, 177, 180);
+                color: rgb(119, 104, 108);
+            }
+
+            .grid-field > section:nth-child(odd) {
+                background-color: rgb(145, 129, 133);
+                color: rgb(231, 229, 230);
+            }
+
+            h1, h2, h3, h4, p, button {
+                padding: 1.5em;
+                
+            }
+
+            button {
+                margin: 2em;
+            }
+
+            input {
+                font-family: 'Courier New', Courier, monospace;
+            }
+        </style>
+        <div class="grid-field">
+            <section>
+                <h1>Let's 'slice' up some strings.</h1>
+                <h3>Use JavaScript to extract/slice 'Johnny' out of the string:</h3>
+                <h4 id="string">All work and no play makes Johnny a dull boy.</h4>
+                <button onclick="sliceString()">Slice.</button>
+                <p id="sliced-str-container"></p>
+            </section>
+            <section>
+                <h1>Give me a string and I will make it mighty.</h1>
+                <input id="user-str" type="text" value="">
+                <br>
+                <button onclick="superSizeStr()">Here ya' go</button>
+                <h2 id="user-str-upper"></h2>
+            </section>
+            <section>
+                <h1>Write a sentence please.</h1>
+                <input id="user-sentence" type="text" value="">
+                <br>
+                <button onclick="extractStr()">Submit</button>
+                <h2 id="extracted-str-message"></h2>
+            </section>
+        </div>
+
+        <script src="jS/Basic_JavaScript_8.js"></script>
+    </body>
+</html>

@@ -1,0 +1,45 @@
+//set up the function that is linked to button press on html that will slice string
+function sliceString() {
+
+//set up var that will establish the string
+    var sampleStr = "All work and no play makes Johnny a dull boy.";
+
+//set up var that will use slice() to extract portion of the string we want
+    var slicedStr = sampleStr.slice( 27, 33);
+//return slice string to html and concat a message with it for fun
+    document.getElementById("sliced-str-container").innerHTML = "Here's " + slicedStr;
+}
+
+//set up function
+function superSizeStr() {
+
+//var that will catch user input
+    var userInput = document.getElementById('user-str').value;
+
+//assign var that will take user input and run thru toUpperCase method
+    var upperStr = userInput.toUpperCase();
+
+//put new user-str back into html
+    document.getElementById('user-str-upper').innerHTML = upperStr;
+}
+
+//create function to extract a str
+function extractStr() {
+
+//est a var that will capture the str from user
+    var userSentence = document.getElementById('user-sentence').value;
+
+//establish a var that will search the user str for a the letter
+    var searchedStr = userSentence.search('e');
+
+//create a conditional statement that will give the user a message that their str has the letter
+    //since the searched str returns a number we will create an if statement looking for a number in a range
+    if (searchedStr >= 0) {
+        document.getElementById('extracted-str-message').innerHTML = "There's the 'e' I was looking for. It's position is " + searchedStr + '.';
+    } 
+    else {
+        document.getElementById('extracted-str-message').innerHTML = "How did you write a sentence without an 'e'!?!"
+    }
+//else write how did you make a sentence without the letter e?
+
+}
