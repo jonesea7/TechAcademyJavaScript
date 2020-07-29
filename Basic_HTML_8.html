@@ -93,6 +93,28 @@
                 <h2 onclick="searchIntStr()">Don't believe me. Click here.</h2>
                 <p id="str-pos-message"></p>
             </section>
+            <section>
+                <h1>How about a big fat decimal number. 0.5544115184145</h1>
+                <!--<input id="user-floater" type="number" placeholder='0.1' step="0.01" min="0" max="10" value=""-->
+                <br>
+                <h2>Click the button to display the fixed number.</h2>
+                <button onclick="fixNumberLength()">Try it!</button>
+                <h2 id="fixed-number-container"></h2>
+            </section>
+            <section>
+                <h1>Here we go toPrecision(). 0.5544115184145</h1>
+                <br>
+                <h2>Click the button to display the more 'precise' number.</h2>
+                <button onclick="setPrecision()">Push Precisely Here</button>
+                <h2 id="precision-outcome"></h2>
+            </section>
+            <section>
+                <h1>Primitive Value</h1>
+                <br>
+                <h2>Click the button to display the primitive value of "Hello from JavaScript.".</h2>
+                <button onclick="getPrimValue()">Try it!</button>
+                <h2 id="print-prim-value"></h2>
+            </section>
         </div>
 
         <script src="jS/Basic_JavaScript_8.js"></script>

@@ -76,3 +76,27 @@ function searchIntStr() {
     //post a message with the new str and it's position to str-pos-message
     document.getElementById('str-pos-message').innerHTML = intStr + " is in index position " + strPosition;
 }
+
+// function fixNumberLength() {
+//     var userFloater = document.getElementById('user-floater').value;
+//     var fixedFloater = userFloater.toFixed(4);
+//     document.getElementById('fixed-number-container').innerHTML = "The new fixed number is " + fixedFloater + ".";
+// }
+
+function fixNumberLength() {
+    var userFloater = 0.5544115184145;
+    var fixedFloater = userFloater.toFixed(4);
+    document.getElementById('fixed-number-container').innerHTML = "The new fixed number is " + fixedFloater + ".";
+}
+
+function setPrecision() {
+    var userFloater = 0.5544115184145;
+    var fixedFloater = userFloater.toPrecision(7);
+    document.getElementById('precision-outcome').innerHTML = "The more precise number is " + fixedFloater + ".";
+}
+
+function getPrimValue() {
+    var str = "Hello from JavaScript.";
+    var primValue = str.valueOf();
+    document.getElementById('print-prim-value').innerHTML = primValue;
+}
