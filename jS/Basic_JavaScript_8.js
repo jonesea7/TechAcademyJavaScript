@@ -43,3 +43,36 @@ function extractStr() {
 //else write how did you make a sentence without the letter e?
 
 }
+
+//create stringTheInteger()
+function stringTheInteger() {
+
+//assign a var to collect the user-int
+    var userInt = document.getElementById('user-int').value;
+
+//assign a var to the user-int being operated on by the toString()
+    var intStr = userInt.toString();
+
+//assign new strInt to a concat-message
+    document.getElementById('concat-message').innerHTML = "Now " + intStr + " is a string."
+}
+
+//to prove it's a string we will search it a label its position
+    //create searchIntStr()
+function searchIntStr() {
+    
+    //collect user-int
+    var userInt = document.getElementById('user-int').value;
+
+    //toString() the user-int and collect in var
+    var intStr = userInt.toString();
+
+    //created the concat-message here
+    concatMessage = "Now " + intStr + " is a string."
+
+    //take the strInt and create a third var with the search()
+    var strPosition = concatMessage.search(intStr);
+
+    //post a message with the new str and it's position to str-pos-message
+    document.getElementById('str-pos-message').innerHTML = intStr + " is in index position " + strPosition;
+}
