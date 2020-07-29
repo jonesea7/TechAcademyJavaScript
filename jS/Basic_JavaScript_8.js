@@ -100,3 +100,10 @@ function getPrimValue() {
     var primValue = str.valueOf();
     document.getElementById('print-prim-value').innerHTML = primValue;
 }
+
+function concatVerb() {
+    var userVerb = document.getElementById('user-verb').value;
+    var myStr = "Or was it the dancing potatoes that liked to ";
+    var userMessage = myStr.concat(userVerb);
+    document.getElementById('concat-verb-message').innerHTML = userMessage + ' the small tigers?';
+}
