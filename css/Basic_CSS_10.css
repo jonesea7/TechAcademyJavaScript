@@ -46,3 +46,15 @@ section:hover {
 h1,h2,h3,h4,p {
     padding: 1.3em;
 }
+
+button {
+    background-color: rgb(234, 235, 214);
+    color: rgb(218, 118, 81);
+    padding: 1em;
+    margin: 1em;
+}
+
+#col-right {
+    grid-row: 1;
+    grid-column: 4;
+}

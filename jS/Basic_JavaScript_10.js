@@ -51,4 +51,19 @@ function countDown() {
         counter--;
     }
     judgeUserFood();
+    
+}
+
+//collect the string from the user
+function collectStr() {
+
+    //save str to a var
+    var userStr = document.getElementById('user-str').value;
+
+
+    //create a new var that holds the str.length
+    var userStrLength = userStr.length;
+
+//send the length back to the user
+    document.getElementById('user-str-count').innerHTML = userStr + " has " + userStrLength + " characters.";
 }
