@@ -67,3 +67,16 @@ function collectStr() {
 //send the length back to the user
     document.getElementById('user-str-count').innerHTML = userStr + " has " + userStrLength + " characters.";
 }
+
+
+
+var foodArray = ["pizza", "chocolate", "smoothies", "sushi", "whiskey"];
+var listContainer = "";
+var loopCounter;
+
+function startListLoop() {
+    for (loopCounter = 0; (loopCounter < foodArray.length); loopCounter++) {
+        listContainer += foodArray[loopCounter] + "<br>";
+    }
+    document.getElementById('loop-list-output').innerHTML = listContainer;
+}

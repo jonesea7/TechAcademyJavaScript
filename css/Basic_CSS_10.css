@@ -18,20 +18,30 @@ nav {
 
 .grid-field {
     display: grid;
-    grid-template-columns: repeat(1fr,4);
+    grid-template-columns: 1fr 1fr 1fr;
     grid-auto-rows: minmax(400px auto);
-    gap: 2em;
+    gap: 1em;
+    grid-auto-columns: minmax(250px auto);
     
 }
 
 section {
-    padding: 2em;
+    
     color: rgb(233, 238, 232);
     background-color: rgb(218, 118, 81);
     
-    width: 230px;
+    width: 250px;
     margin: 8%;
 
+}
+
+.card-banner {
+    padding: 1em;
+    background-color: rgb(35, 35, 240);
+    color: whitesmoke;
+    margin-bottom: 1em;
+    font-size: 1.25em;
+    letter-spacing: 1.5px;
 }
 
 img {
@@ -52,9 +62,4 @@ button {
     color: rgb(218, 118, 81);
     padding: 1em;
     margin: 1em;
-}
-
-#col-right {
-    grid-row: 1;
-    grid-column: 4;
 }

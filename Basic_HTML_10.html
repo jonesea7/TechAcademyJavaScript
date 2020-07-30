@@ -16,7 +16,8 @@
             </ul>
         </nav>
         <div class="grid-field">
-            <section>
+            <section id="card-one">
+                <div class="card-banner">CONSOLE SECRET</div>
                 <img src="img/pizzaMark.jpg" alt="Pizza Question Mark" title="Delicious Question Ahead">
                 <h2>What is the Best Food on Planet Earth?</h2>
                 <input id="user-food" type="text" value="" placeholder="Type and Click Submit"><br>
@@ -25,12 +26,20 @@
                 <h3 id="user-message2"></h3>
                 <p>P.S. Check out the console.log after you click 'Submit'</p>
             </section>
-            <section id="col-right">
+            <section id="card-two">
+                <div class="card-banner">STRING THEORY</div>
                 <img src="img/numberQuestion.jpg" alt="Number Question Mark" title="How much?">
                 <h2>Guess how many characters are in your full name.</h2>
                 <input id="user-str" type="text" value="" placeholder="nospacesforaccuracy"><br>
                 <button onclick="collectStr()">Push it Good</button>
                 <h3 id="user-str-count"></h3>
+            </section>
+            <section id="card-three">
+                <div class="card-banner">LOOP LOGIC</div>
+                <img src="img/loop.png" alt="Arrow Loop" title="Going in Circles">
+                <h2>The major food groups are:</h2><br>
+                <button onclick="startListLoop()">Loop it!</button>
+                <h3 id="loop-list-output"></h3>
             </section>
         </div>
 
