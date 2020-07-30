@@ -1,0 +1,48 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    font-weight: 700;
+    font-variant: small-caps;
+    position: relative;
+}
+
+nav {
+    background-color: rgb(36, 34, 34);
+    position: sticky;
+}
+
+.grid-field {
+    display: grid;
+    grid-template-columns: repeat(1fr,4);
+    grid-auto-rows: minmax(400px auto);
+    gap: 2em;
+    
+}
+
+section {
+    padding: 2em;
+    color: rgb(233, 238, 232);
+    background-color: rgb(218, 118, 81);
+    
+    width: 230px;
+    margin: 8%;
+
+}
+
+img {
+    border-radius: 100%;
+}
+
+section:hover {
+    box-shadow: black;
+    border: 1px solid black;
+}
+
+h1,h2,h3,h4,p {
+    padding: 1.3em;
+}
