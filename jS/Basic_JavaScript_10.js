@@ -136,3 +136,18 @@ function returnUserFavTemporarily () {
     //print orginal choice again 'sorry I just can't
     document.getElementById('original-output2').innerHTML = "It's actually " + foodChoice + "!";
 }
+
+function returnNewBottleCount() {
+
+    //set var and get user integer user-bottle-int
+    var userTakenBottles = document.getElementById('user-bottle-int').value;
+
+    //perform subtraction on the number with the return method
+    return (99 - userTakenBottles);
+
+    //send the result to return-remaining-bottles
+}
+
+function callNewBottleCountFunction() {
+    document.getElementById('return-remaining-bottles').innerHTML = returnNewBottleCount();
+}

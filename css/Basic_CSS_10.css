@@ -63,3 +63,18 @@ button {
     padding: 1em;
     margin: 1em;
 }
+
+#card-seven {
+    grid-column: 1/4;
+    grid-row: 3/4;
+    width: 100%;
+    margin: 1em 0 1em 0;
+}
+
+#seven-card-banner {
+    border: none;
+    box-shadow: 5px 10px black;
+    width: 502px;
+    margin: 1em auto;
+    color: orange;
+}
