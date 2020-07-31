@@ -80,3 +80,18 @@ function startListLoop() {
     }
     document.getElementById('loop-list-output').innerHTML = listContainer;
 }
+
+//gather user array in function isolateIndexInUserArray()
+function isolateIndexInUserArray() {
+
+    //establish var basket to catch an array []
+    var nastyFoodBasket = [];
+
+    //collect user array from 'user-array' and store in var basket, had to add more inputs from user
+    nastyFoodBasket[0] = document.getElementById('user-index0').value;
+    nastyFoodBasket[1] = document.getElementById('user-index1').value;
+    nastyFoodBasket[2] = document.getElementById('user-index2').value;
+
+    //print the index one item to the document at 'isolated-index-output'
+    document.getElementById('isolated-index-output').innerHTML = "So, " + "'" + nastyFoodBasket[1] + "'" + " is your second worst or second best worst food?";
+}
