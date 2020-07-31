@@ -95,3 +95,8 @@ function isolateIndexInUserArray() {
     //print the index one item to the document at 'isolated-index-output'
     document.getElementById('isolated-index-output').innerHTML = "So, " + "'" + nastyFoodBasket[1] + "'" + " is your second worst or second best worst food?";
 }
+
+//take user input into functin returnConstantMessage()
+//establish greatestFood as constant
+//place user input in var container
+//create conditional if pizza positive response else
