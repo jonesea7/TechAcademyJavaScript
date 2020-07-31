@@ -97,6 +97,42 @@ function isolateIndexInUserArray() {
 }
 
 //take user input into functin returnConstantMessage()
-//establish greatestFood as constant
-//place user input in var container
-//create conditional if pizza positive response else
+function returnConstantMessage() {
+
+    //establish greatestFood as constant
+    const greatestFood = {name:"pizza", type:"italian", topping:"sauce"} 
+
+    //place user input in var container
+    var userGreatestFoodChoice = document.getElementById('user-var-input').value;
+
+    //create conditional if pizza positive response else
+    if (userGreatestFoodChoice == "pizza" || userGreatestFoodChoice == "Pizza") {
+        document.getElementById('constant-output').innerHTML = greatestFood.name + " is still the correct choice and my favorite part is the " + greatestFood.topping + ".";
+    }
+    else {
+        document.getElementById('constant-output').innerHTML = greatestFood.name + " is still the correct choice and my favorite part is the " + greatestFood.topping + ".";
+    }
+}
+
+
+//function returnUserFavTemporarily()
+function returnUserFavTemporarily () {
+
+    //create var foodChoice and print it
+    var foodChoice = "pizza";
+    document.getElementById('original-output').innerHTML = foodChoice;
+
+    //create let var in brackets with I mean userChoice
+
+    {let foodChoice = document.getElementById('user-fav-input').value;
+        if (foodChoice == "pizza") {
+            document.getElementById('temp-output').innerHTML = "Thank goodness you agree.";    
+        } 
+        else {
+            document.getElementById('temp-output').innerHTML = "Sorry, it's " + foodChoice;
+        }    
+    };
+
+    //print orginal choice again 'sorry I just can't
+    document.getElementById('original-output2').innerHTML = "It's actually " + foodChoice + "!";
+}
