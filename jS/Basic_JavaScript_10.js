@@ -165,3 +165,24 @@ let Whiskey = {
 function tasteWhiskey() {
     document.getElementById('taste-description').innerHTML = Whiskey.taste();
 }
+
+//set up two var to catch the outputs
+var messageContainer;
+var mutableInteger;
+//create a for loop for i being less than 10
+for (mutableInteger = 2; mutableInteger < 10; mutableInteger++) {
+
+//if i is equal to 7 break the loop
+    if (mutableInteger === 4) {
+        continue;
+    }
+    else if (mutableInteger === 7) {
+        break;
+    }
+//print result to the user
+    messageContainer += "You found the " + mutableInteger + " I was looking for that."
+}
+
+function runBreakPoint() {
+    document.getElementById('breakPointMessage').innerHTML = messageContainer;
+}
