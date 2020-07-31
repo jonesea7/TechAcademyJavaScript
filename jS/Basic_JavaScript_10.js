@@ -146,8 +146,22 @@ function returnNewBottleCount() {
     return (99 - userTakenBottles);
 
     //send the result to return-remaining-bottles
-}
+};
 
 function callNewBottleCountFunction() {
     document.getElementById('return-remaining-bottles').innerHTML = returnNewBottleCount();
+};
+
+let Whiskey = {
+    name: "Glenlivet ",
+    yearAged: 12,
+    origin: "Ireland",
+    taste: function() {
+        return "The amber liquid sends floral smoothness rushing over your palate."
+    }
+
+};
+
+function tasteWhiskey() {
+    document.getElementById('taste-description').innerHTML = Whiskey.taste();
 }
