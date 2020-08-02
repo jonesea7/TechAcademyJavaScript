@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+
+<html lang="en-us">
+    <head>
+        <title>jQuery Demo</title>
+        <meta charset="utf-8">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    </head>
+    <body>
+        <script>
+            // $ and jQuery are the same ('body').
+
+            $(document).ready(function(){
+                $('html').append(
+                    "<body>\
+                        <div id='container'>\
+                            <div id='inner'>\
+                                <h1>Basic jQuery</h1>\
+                                <p id='1'>Paragraph 1</p>\
+                                <p id='2'>Paragraph 2</p>\
+                                <p id='3'>Paragraph 3</p>\
+                                <p id='hidden'>Secret Revealed</p>\
+                            </div>\
+                        </div>\
+                    </body>"
+                );
+                $("#hidden").hide();
+                $("#2").css({"color":"red"});
+                $("#3").click(function() {
+                    $('h1').hide();
+                    $('#hidden').show();
+                });
+                $("#1").hover(function(){
+                    $("body").css({"background-color":"darkgray"})
+                    $("body").css({"color": "whitesmoke"})
+                });
+               
+            });
+
+        </script>
+    </body>
+</html>
